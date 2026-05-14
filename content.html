@@ -2,16 +2,18 @@
 
 <h2>Syntax</h2>
 
-<p>To specify VS Code extensions in the <code>.devcontainer/devcontainer.json</code> file, create a key-value pair within the highest-level object the key <code>extensions</code> and a value of another object. Within this object, create another key-value-pair with the key <code>vscode</code> whose value is an array. Within this array, you can list the identifiers of the extensions you want to install, each expressed as a string. For example, your <code>devcontainer</code> may look as follows:</p>
+<p>To specify VS Code extensions in the <code>.devcontainer/devcontainer.json</code> file, create a key-value pair within the highest-level object with the key <code>customizations</code> and a value of an object. Within this object, create another key-value pair with the key <code>vscode</code> whose value is an object. Within this object, create an <code>extensions</code> key with an array of extension identifiers as the value. Each identifier should be expressed as a string. For example, your <code>devcontainer.json</code> may look as follows:</p>
 
 <pre><code class="language-json">{
   "image": "mcr.microsoft.com/devcontainers/base:alpine",
   "name": "Example",
-  "extensions": {
-    "vscode": [
-      "ms-python.python",
-      "ms-python.flake8"
-    ]
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.flake8"
+      ]
+    }
   }
 }</code></pre>
 
