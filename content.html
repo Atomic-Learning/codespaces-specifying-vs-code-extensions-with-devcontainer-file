@@ -5,7 +5,7 @@
 <p>To specify VS Code extensions in the <code>.devcontainer/devcontainer.json</code> file, create a key-value pair within the highest-level object the key <code>extensions</code> and a value of another object. Within this object, create another key-value-pair with the key <code>vscode</code> whose value is an array. Within this array, you can list the identifiers of the extensions you want to install, each expressed as a string. For example, your <code>devcontainer</code> may look as follows:</p>
 
 <pre><code class="language-json">{
-  "image": "mcr.microsoft.com/vscode/devcontainers/ubuntu:latest",
+  "image": "mcr.microsoft.com/devcontainers/base:alpine",
   "name": "Example",
   "extensions": {
     "vscode": [
