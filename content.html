@@ -1,1 +1,31 @@
+<p>It is possible to specify a list of VS Code extensions in the <code>devcontainer.json</code> file that will be installed when the Codespace is created. This can be useful for presenting the user of the Codespace with a pre-configured environment to aid their productivity.</p>
 
+<h2>Syntax</h2>
+
+<p>To specify VS Code extensions in the <code>.devcontainer/devcontainer.json</code> file, create a key-value pair within the highest-level object the key <code>extensions</code> and a value of another object. Within this object, create another key-value-pair with the key <code>vscode</code> whose value is an array. Within this array, you can list the identifiers of the extensions you want to install, each expressed as a string. For example, your <code>devcontainer</code> may look as follows:</p>
+
+<pre><code class="language-json">{
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:0-3.12",
+  "name": "Example",
+  "extensions": {
+    "vscode": [
+      "ms-python.python",
+      "ms-python.flake8"
+    ]
+  }
+}</code></pre>
+
+<p>In the example above, the extensions <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank" rel="noopener noreferrer">Python</a> and <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.flake8" target="_blank" rel="noopener noreferrer">Flake8</a> will be installed when the Codespace is created.</p>
+
+<h2>Mini-Example</h2>
+
+<p>Click the link at the top of the page to open a Codespace. Wait for the Codespace to load. Open the Extensions view. You should see some default extensions installed, as well as:</p>
+
+<ul>
+    <li><a href="https://marketplace.visualstudio.com/items?itemName=analytic-signal.preview-pdf" target="_blank" rel="noopener noreferrer">Preview PDF</a></li>
+    <li><a href="https://marketplace.visualstudio.com/items?itemName=kuba-p.theme-pink-candy" target="_blank" rel="noopener noreferrer">Pink Candy Theme</a></li>
+</ul>
+
+<p>Note that the Pink Candy theme will be installed, but not applied automatically. You can activate it from its page that you can access in the Extensions view.</p>
+
+<p>You can view the <code>.devcontainer/devcontainer.json</code> file to see how the extensions are specified.</p>

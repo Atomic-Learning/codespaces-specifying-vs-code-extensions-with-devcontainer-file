@@ -1,0 +1,12 @@
+{
+    "image": "mcr.microsoft.com/vscode/devcontainers/ubuntu:latest",
+    "name": "Example",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "analytic-signal.preview-pdf",
+                "kuba-p.theme-pink-candy"
+            ]
+        }
+    }
+}

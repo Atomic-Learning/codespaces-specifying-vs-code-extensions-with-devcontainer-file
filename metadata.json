@@ -1,22 +1,21 @@
 {
-    "title": "",
-    "slug": "",
-    "description": "",
+    "title": "Codespaces: Specifying VS Code Extensions with the devcontainer file",
+    "slug": "codespaces-specifying-vs-code-extensions-with-devcontainer-file",
+    "description": "This guide covers how to specify VS Code Extensions so they will be automatically installed when a user opens a new Codespace.",
     "authors": [
-        "",
-        ""
+        "chris-cooling"
     ],
     "tags": [
-        "",
-        ""
+        "codespace",
+        "vs-code"
     ],
-    "duration": 0,
+    "duration": 5,
     "prerequisites": [
-        "",
-        ""
+        "vs-code-file-explorer",
+        "vs-code-extension-identifiers",
+        "json-nested-arrays-and-objects",
+        "codespaces-configuring-with-devcontainer-file"
     ],
     "related": [
-        "",
-        ""
     ]
 }
